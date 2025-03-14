@@ -1,18 +1,30 @@
-## Getting Started
+Projeto: ContaBanco
+Este projeto faz parte do aprendizado do módulo de Sintaxe e visa criar uma simulação de contas bancárias com as seguintes especificações:
 
-Welcome to the VS Code Java world. Here is a guideline to help you get started to write Java code in Visual Studio Code.
+1. Criação do Projeto
+O projeto ContaBanco receberá dados via terminal para configurar as características de uma conta bancária.
 
-## Folder Structure
+2. Criação da Classe
+Dentro do projeto, foi criada a classe ContaTerminal.java, onde toda a codificação do programa será realizada.
 
-The workspace contains two folders by default, where:
+3. Atributos da Conta Bancária
+A tabela abaixo apresenta os atributos que compõem as contas bancárias no projeto:
 
-- `src`: the folder to maintain sources
-- `lib`: the folder to maintain dependencies
+| **Atributo**    | **Tipo**    | **Exemplo**        |
+|------------------|-------------|--------------------|
+| Número           | Inteiro     | 1021              |
+| Agência          | Texto       | 067-8             |
+| Nome do Cliente  | Texto       | Mario Andrade     |
+| Saldo            | Decimal     | 237.48            |
 
-Meanwhile, the compiled output files will be generated in the `bin` folder by default.
+4. Inserção de Dados
+Os dados devem ser inseridos via terminal, sendo que o usuário receberá mensagens indicando as informações que precisam ser fornecidas, por exemplo:
 
-> If you want to customize the folder structure, open `.vscode/settings.json` and update the related settings there.
+Programa: "Por favor, digite o número da Agência!"
 
-## Dependency Management
+Usuário: 1021 (e aperta ENTER para o próximo campo)
 
-The `JAVA PROJECTS` view allows you to manage your dependencies. More details can be found [here](https://github.com/microsoft/vscode-java-dependency#manage-dependencies).
+5. Exibição da Mensagem Final
+Depois de todas as informações terem sido inseridas, o sistema exibirá a seguinte mensagem para o usuário: Olá [Nome Cliente], obrigado por criar uma conta em nosso banco. Sua agência é [Agência], conta [Número] e seu saldo [Saldo] já está disponível para saque.
+
+Os campos em [ ] serão preenchidos com as informações fornecidas pelo usuário.
